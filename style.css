@@ -1,0 +1,24 @@
+table tr th:first-child{
+  text-align: left;
+}
+table tr th:last-child{
+  align-items: center;
+  
+}
+
+button{
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ margin-left: 100px;
+margin-top: 20px;
+ padding: 7px 20px;
+}
+
+table{
+  background-color:lightgoldenrodyellow;
+  padding: 10px;
+}
+table th{
+  padding-top: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function takevalue(){
+      var fname = document.getElementById('firstname').value;
+      var lname = document.getElementById('lastname').value;
+      var email = document.getElementById('mails').value;
+
+      document.write("Your Info : <br> "+"FIRST NAME :"+fname+ "<br>")
+      document.write("SECOND NAME :"+lname+ "<br>")
+      document.write("EMAIL :"+email+ "<br>")
+    }
+  </script>
+</head>
+<body>
+  <h1 style="color:peru; font-variant:small-caps">Please enter the details</h1>
+  <table>
+    <form onsubmit="takevalue()" action="">
+      <tr>
+        <th>
+          First Name:
+        </th>
+        <th>
+          <input type="text" id="firstname" placeholder="Enter your first name" required>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Last Name:
+        </th>
+        <th>
+          <input type="text" id="lastname" placeholder="Enter your last name" required>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Email:
+        </th>
+        <th>
+          <input type="email" id="mails" placeholder="Enter your Email" required>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <button class="btn" type="submit">Submit</button>
+        </th>
+      </tr>
+    </form>
+  </table>
+</body>
+</html>
